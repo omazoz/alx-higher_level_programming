@@ -9,18 +9,18 @@ int check_cycle(listint_t *list)
 {
 	listint_t *curr, *check;
 
-	if (list == NULL || list->next_node == NULL)
+	if (list == NULL || list->next == NULL)
 		return (0);
 	curr = list;
-	check = curr->next_node;
+	check = curr->next;
 
-	while (curr != NULL && check->next_node != NULL
-		&& check->next_node->next_node != NULL)
+	while (curr != NULL && check->next != NULL
+		&& check->next->next != NULL)
 	{
 		if (curr == check)
 			return (1);
-		curr = curr->next_node;
-		check = check->next_node->next_node;
+		curr = curr->next;
+		check = check->next->next;
 	}
 	return (0);
 }
