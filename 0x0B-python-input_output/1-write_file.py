@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+Contains the function "wrtie_file"
+"""
 
 
 def write_file(filename="", text=""):
