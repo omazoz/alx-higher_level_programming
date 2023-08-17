@@ -1,3 +1,4 @@
+-- This script created by Oumayma Mazoz
 -- script that displays the top 3 of cities
 -- temperature during July and August
 SELECT city,avg_temp FROM (SELECT city, AVG(value) AS avg_temp
