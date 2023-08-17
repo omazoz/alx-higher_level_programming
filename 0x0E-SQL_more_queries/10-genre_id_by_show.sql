@@ -1,3 +1,4 @@
+-- This Script Created BY Oumayma Mazoz
 -- script for selecting TV shows and their genres
 -- join statement to do result DML
 SELECT tv_shows.title, tv_show_genres.genre_id
